@@ -346,7 +346,7 @@ body {
   margin-bottom: 12px;
   max-width: 370px;
   list-style: none;
-  background: url(/img/check.svg) no-repeat 0 4px;
+  background: url(/images/check.svg) no-repeat 0 4px;
   padding-left: 24px;
 }
 .about_list_item:last-of-type {
