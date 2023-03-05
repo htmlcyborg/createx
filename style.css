@@ -1,0 +1,731 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.home {
+  background-color: #fedcd2;
+}
+.header {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.header_logo {
+  width: 100%;
+  max-width: 130px;
+  margin-right: 60px;
+}
+.header_list {
+  display: flex;
+}
+.header_list_item {
+  list-style-type: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #424551;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.header_list_item:hover {
+  color: #ff3f3a;
+  transition: 0.3s;
+}
+.header_list_item:last-of-type {
+  margin-right: px;
+}
+.header_button {
+  width: 200px;
+  padding: 17px 5px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border-radius: 4px;
+  border: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 35px;
+}
+.header_button:hover {
+  background: #000;
+  transition: 0.3s all;
+}
+.active_user_area {
+  display: flex;
+  align-items: center;
+  margin-left: 190px;
+}
+.header_login_area {
+  display: flex;
+  justify-content: space-between;
+}
+.login_img {
+  width: 100%;
+  max-width: 20px;
+  margin-right: 10px;
+}
+.header_login {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #424551;
+  cursor: pointer;
+}
+.home_page {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 180px;
+}
+.home_page_textarea {
+  display: flex;
+  flex-direction: column;
+}
+.showreel {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.home_page_showreel {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1e212c;
+}
+.home_page_title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  letter-spacing: 1px;
+  color: #1e212c;
+  line-height: 130%;
+  max-width: 500px;
+  margin-bottom: 60px;
+  margin-left: 10px;
+}
+.home_page_buttons {
+  display: flex;
+}
+.home_page_btn1 {
+  box-sizing: border-box;
+  gap: 10px;
+  padding: 15px 45px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff3f3a;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.home_page_btn2 {
+  box-sizing: border-box;
+  gap: 10px;
+  padding: 15px 45px;
+  border-radius: 4px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+}
+.home_page_btn2:hover {
+  background: #000;
+  transition: 0.3s;
+}
+.home_page_nominates {
+  display: flex;
+  justify-content: center;
+}
+.home_page_nominate {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  color: #1e212c;
+  margin-right: 65px;
+  margin-bottom: 100px;
+}
+.home_page_nominate:last-of-type {
+  margin-right: 0px;
+}
+.home_page_span {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1e212c;
+  margin-right: 12px;
+}
+.point {
+  margin-right: 65px;
+  margin-top: -92px;
+}
+
+/* ABOUT */
+
+.about {
+  padding: 180px 0;
+}
+.main_block_about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_block_about {
+  display: flex;
+  flex-direction: column;
+}
+.about_subtitle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 10px;
+}
+.about_title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+  margin-bottom: 40px;
+}
+.about_list_item {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  margin-bottom: 12px;
+  max-width: 370px;
+  list-style: none;
+  background: url(/img/check.svg) no-repeat 0 4px;
+  padding-left: 24px;
+}
+.about_list_item:last-of-type {
+  margin-bottom: 40px;
+}
+.about_btn {
+  box-sizing: border-box;
+  gap: 10px;
+  width: 161px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+}
+.about_btn:hover {
+  background: #000;
+  transition: 0.3s;
+}
+
+/* COURSES */
+
+.courses_intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.courses_intro_button {
+  padding: 0 40px;
+  height: 52px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff3f3a;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  cursor: pointer;
+}
+.courses_menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-bottom: 40px;
+}
+.course_card {
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #e5e8ed;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+}
+.text_card_content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+  padding: 32px 0;
+}
+.course_name_card1 {
+  background: #03cea4;
+  border-radius: 4px;
+  padding: 2px 5px;
+  width: 80px;
+  border: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 22px;
+}
+.course_name_card2 {
+  border-radius: 4px;
+  padding: 2px 5px;
+  width: 90px;
+  max-width: 100%;
+  border: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 22px;
+  background: #5a87fc;
+}
+.course_name_card3 {
+  border-radius: 4px;
+  padding: 2px 5px;
+  width: 110px;
+  max-width: 100%;
+  border: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 22px;
+  background: #f89828;
+}
+.course_name_card4 {
+  border-radius: 4px;
+  padding: 2px 5px;
+  width: 70px;
+  max-width: 100%;
+  border: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 22px;
+  background: #f52f6e;
+}
+.course_card_title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+  margin-bottom: 20px;
+}
+.course_card_span {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ff4242;
+}
+.corse_card_cap {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #787a80;
+}
+
+/* BENEFITS */
+
+.benefits {
+  padding: 140px 0;
+}
+.benefits_button {
+  border: none;
+  border-radius: 4px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #9a9ca5;
+  background: #ffffff;
+  width: 307px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.benefits_title_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.benefits_button_block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.benefits_button_img {
+  fill: #9a9ca5;
+}
+.benefits_button:hover {
+  color: #ff3f3a;
+  border: 1px solid #ff3f3a;
+  transition: 0.3s all;
+}
+.benefits_button_img:hover {
+  fill: #ff3f3a;
+  transition: 0.3s;
+}
+.benefits_content_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.benefits_content_title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 130%;
+  color: #1e212c;
+  margin-bottom: 24px;
+}
+.benefits_content_subtitle {
+  max-width: 500px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+
+.events {
+  background-color: #fedcd2;
+  padding: 80px 0;
+}
+.events_title_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.lectures_block {
+  margin-bottom: 50px;
+}
+.lecture {
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+.lecture:hover {
+  box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16),
+    0px 30px 24px -10px rgba(255, 63, 58, 0.1),
+    0px 12px 10px -6px rgba(255, 63, 58, 0.08),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  transition: 0.7s all;
+}
+.lecture_date {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+.lecture_date_time {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: #ff3f3a;
+  margin-right: 20px;
+}
+.lecture_date_title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+}
+.lecture_date_subtitle {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: #787a80;
+}
+.lecture_btn {
+  padding: 0px 20px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  background: #ffffff;
+  color: #ff3f3a;
+  border-radius: 4px;
+  border: 1px solid #ff3f3a;
+  margin-left: 60px;
+  cursor: pointer;
+}
+.lecture_btn:hover {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  color: #ffffff;
+  transition: 0.3s all;
+}
+.lecture_btn2 {
+  padding: 0px 20px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  background: #ffffff;
+  color: #ff3f3a;
+  border-radius: 4px;
+  border: 1px solid #ff3f3a;
+  margin-left: 300px;
+  cursor: pointer;
+}
+.lecture_btn2:hover {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  color: #ffffff;
+  transition: 0.3s all;
+}
+.more_lecture_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.more_lecture_title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #1e212c;
+  margin-right: 60px;
+}
+.more_lecture_btn {
+  box-sizing: border-box;
+  gap: 10px;
+  width: 170px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+}
+.more_lecture_btn:hover {
+  background: #000;
+  transition: 0.3s;
+}
