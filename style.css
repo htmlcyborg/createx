@@ -582,12 +582,19 @@ body {
 .benefits_button_img {
   fill: #9a9ca5;
 }
+.benefits_button_text {
+  margin-left: 10px;
+}
 .benefits_button:hover {
   color: #ff3f3a;
   border: 1px solid #ff3f3a;
   transition: 0.3s all;
 }
-.benefits_button_img:hover {
+
+/* HOVER SVG НЕ РАБОТАЕТ  */
+
+
+.benefits_button .benefits_button_img:hover {
   fill: #ff3f3a;
   transition: 0.3s;
 }
