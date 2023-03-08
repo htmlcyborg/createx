@@ -121,6 +121,16 @@ body {
   max-width: 130px;
   margin-right: 3px;
 }
+.logo_title {
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 110%;
+color: #1E212C;
+text-decoration: none;
+display: flex;
+}
 .header_logo2 {
   width: 100%;
   max-width: 27px;
@@ -197,14 +207,21 @@ body {
 }
 .home_page {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 180px;
+  justify-content: center;
+  justify-content: space-between;
 }
 .home_page_textarea {
   display: flex;
   flex-direction: column;
 }
+.home_page_mainimg {
+  width: 100%;
+  max-width: 600px;
+}
 .showreel_img {
+  width: 100%;
+  max-width: 84px;
   margin-right: 5px;
 }
 .showreel_img:hover {
@@ -292,6 +309,7 @@ body {
 .home_page_nominates {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .home_page_nominate {
   font-family: "Lato";
@@ -324,6 +342,10 @@ body {
   margin-right: 65px;
   margin-top: -92px;
 }
+.point2 {
+  margin-right: 65px;
+  margin-top: -92px;
+} 
 
 /* ABOUT */
 
@@ -398,6 +420,10 @@ body {
   background: #000;
   transition: 0.3s;
 }
+.woman_img {
+  width: 100%;
+  max-width: 705px;
+}
 
 /* COURSES */
 
@@ -406,6 +432,26 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+}
+.about_subtitle2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 10px;
+}
+.about_title2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+  margin-bottom: 40px;
 }
 .courses_intro_button {
   padding: 0 40px;
@@ -428,12 +474,17 @@ body {
   background-clip: text;
   cursor: pointer;
 }
+
 .courses_menu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
   row-gap: 30px;
   margin-bottom: 40px;
+}
+.course_img_card {
+  width: 100%;
+  max-width: 214px;
 }
 .course_card {
   display: flex;
@@ -549,6 +600,26 @@ body {
 .benefits {
   padding: 140px 0;
 }
+.about_subtitle3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 10px;
+}
+.about_title3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+  margin-bottom: 30px;
+}
 .benefits_button {
   border: none;
   border-radius: 4px;
@@ -575,8 +646,8 @@ body {
   margin-bottom: 20px;
 }
 .benefits_button_block {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns:repeat(4,1fr) ;
   margin-bottom: 80px;
 }
 .benefits_button_img {
@@ -590,11 +661,7 @@ body {
   border: 1px solid #ff3f3a;
   transition: 0.3s all;
 }
-
-/* HOVER SVG НЕ РАБОТАЕТ  */
-
-
-.benefits_button .benefits_button_img:hover {
+.benefits_button:hover .benefits_button_img {
   fill: #ff3f3a;
   transition: 0.3s;
 }
@@ -620,6 +687,10 @@ body {
   font-size: 16px;
   line-height: 160%;
   color: #424551;
+}
+.benefits_illustration {
+  width: 100%;
+  max-width: 600px;
 }
 
 .events {
@@ -767,4 +838,351 @@ body {
 .more_lecture_btn:hover {
   background: #000;
   transition: 0.3s;
+}
+@media screen and (max-width:1250px)  {
+  .active_user_area {
+    display: none;
+  }
+  .header {
+    justify-content: space-between;
+    padding: 25px 20px;
+  }
+  .header_list {
+    display: none;
+  }
+  .home {
+    padding: 20px 30px;
+  }
+  .home_page {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .home_page {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  } 
+  .home_page_textarea {
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+    align-items: center;
+  }
+  .home_page_buttons {
+    margin-bottom: 50px;
+  } 
+  .home_page_title {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: #1e212c;
+    line-height: 130%;
+    max-width: 500px;
+    margin-bottom: 60px;
+    text-align: center;
+  } 
+  .home_page_nominates {
+    align-items: center;
+  }
+  .home_page_nominate:last-of-type {
+    margin-right: 60px;
+  }
+   .main_block_about {
+    padding: 0px 50px;
+   }
+   .woman_img {
+    width: 100%;
+    max-width: 600px  ;
+  }
+  .featured_courses {
+    padding: 0 50px;
+  }
+  .benefits {
+    padding: 30px 50px;
+  }
+  .benefits_button_block {
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    margin-bottom: 80px;
+    justify-items: center;
+  }
+  .events {
+    padding: 50px 50px;
+  }
+  .lecture_btn {
+    padding: 0 20px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    background: #ffffff;
+    color: #ff3f3a;
+    border-radius: 4px;
+    border: 1px solid #ff3f3a;
+    margin-left: 60px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width:1100px ) {
+.about {
+  padding: 70px 0;  
+}
+.main_block_about {
+  flex-direction: column;
+  align-items: center;
+ }
+ .woman_img {
+  margin-bottom: 40px;
+}
+.courses_menu {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-bottom: 40px;
+}
+}
+@media screen and (max-width:1050px ) {
+  .point2 {
+    margin-right: 65px;
+    margin-top: -92px;
+    visibility: hidden;
+  } 
+  .benefits_content_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .benefits_content_subtitle {
+    max-width: 500px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+    margin-bottom: 30px;
+  }
+  
+}
+@media screen and (max-width:720px ) {
+  .home_page_nominate {
+    margin-top: -50px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+  }
+  .point {
+    visibility: hidden;
+  }
+  .about_subtitle2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1e212c;
+    margin-bottom: 10px;
+  }
+  .about_title2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 130%;
+    color: #1e212c;
+    margin-bottom: 40px;
+  }
+  .about_title {
+    margin-bottom: 10px;
+  }
+  .about_subtitle3 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1e212c;
+    margin-bottom: 10px;
+  }
+  .about_title3 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 130%;
+    color: #1e212c;
+    margin-bottom: 10px;
+  }
+  .benefits_button_block {
+    display: grid;
+    grid-template-columns:repeat(1,1fr) ;
+    margin-bottom: 80px;
+    justify-items: center;
+    margin-bottom: 40px;
+  }
+.benefits_content_textblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
+@media screen and (max-width:600px ) {
+  .home_page_nominates {
+    display: none;
+  }
+  .course_img_card {
+    width: 100%;
+    max-width: 200px;
+  }
+  .course_card {
+    flex-direction: column;
+    align-items: center ;
+    width: 200px;
+  }
+  .courses_menu {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 40px;
+    justify-items: center;
+  }
+  .text_card_content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 32px 10px;
+    align-items: center;
+  }
+}
+@media screen and (max-width:500px ) {
+  .course_img_card {
+    width: 100%;
+    max-width: 170px;
+  }
+  .course_card_title {
+    font-size: 17px;
+}
+.corse_card_cap {
+  font-size: 15px;
+}
+.course_card_span {
+  font-size: 15px;
+}
+.courses_intro_button {
+  padding: 0 30px;
+  height: 52px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff3f3a;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+}
+}
+@media screen and (max-width:450px ) {
+  .home_page_nominate {
+  margin-right: 100px;
+    margin-top: -50px;
+  }
+  .home_page_span {
+    font-size: 40px;
+  }
+  .home_page_title {
+    font-size: 42px;
+  }
+  .header {
+    margin-bottom: 60px;
+  }
+  .benefits {
+    padding: 30px 30px;
+  }
+} 
+
+@media screen and (max-width:400px) {
+   .home_page_title {
+    font-size: 30px;
+  } 
+  .home_page_btn1 {
+      padding: 10px 30px;
+      font-size: 10px;
+  } 
+  .home_page_btn2 {
+    padding: 10px 30px;
+    font-size: 10px;
+  }
+  .home_page_showreel {
+    font-size: 10px;
+  }
+  .showreel_img {
+    max-width: 50px;
+  }
+  .home_page_title {
+    margin-bottom: 25px;
+  }
+  .home_page_mainimg {
+    margin-bottom: -100px;
+  }
+  .about_title {
+    font-size: 30px;
+  }
+  .about_title2 {
+    font-size: 30px;
+  }
+  .about_title3 {
+    font-size: 30px;
+  }
+  .about_title3 {
+    font-size: 30px;
+  }
+  .about_list_item  {
+    font-size: 13px;
+  }
+  .about_btn {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+  .about_subtitle {
+   font-size: 12px;
+  }
+  .about_subtitle2 {
+    font-size: 12px;
+   }
+  .header {
+    margin-bottom: 30px;
+  }
+  .logo_title {
+    font-size: 17px;
+  }
+  .header_logo2 {
+    max-width: 15px;
+  }
+  .courses_intro {
+    flex-direction: column;
+  }
+  .courses_text_intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefits_content_title {
+    font-size: 30px;
+  }
+  .benefits_content_subtitle {
+    font-size: 13px;
+  }
 }
